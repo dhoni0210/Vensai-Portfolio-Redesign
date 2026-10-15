@@ -154,44 +154,44 @@ export default function HomePage() {
             <span>SCALE</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
             {/* Left Column: Headlines & CTAs */}
-            <div className="lg:col-span-7 space-y-6">
-              <h1 className="text-3xl sm:text-5xl xl:text-[54px] font-semibold tracking-tight text-vensai-text leading-[1.14]">
+            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-[52px] font-semibold tracking-tight text-vensai-text leading-[1.18] sm:leading-[1.14]">
                 Technology, talent and solutions for businesses ready to{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-vensai-electric to-vensai-cyan">
                   build and scale.
                 </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-vensai-muted leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-lg text-vensai-muted leading-relaxed max-w-2xl">
                 From software and managed IT to AI, cybersecurity, enterprise systems, e-commerce, research and
                 operational support, Vensai brings the right expertise together and manages the engagement from
                 requirement to delivery.
               </p>
 
-              {/* Primary CTAs */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-1">
+              {/* Primary CTAs (Mobile-friendly full-width or auto) */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-blue-600 to-vensai-electric hover:from-blue-500 hover:to-vensai-cyan rounded-lg shadow-blue-glow transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-blue-600 to-vensai-electric hover:from-blue-500 hover:to-vensai-cyan rounded-lg shadow-blue-glow transition-all text-center"
                 >
                   <span>Talk to Vensai</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-vensai-text hover:text-vensai-cyan bg-vensai-card hover:bg-vensai-elevated border border-vensai-border rounded-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-vensai-text hover:text-vensai-cyan bg-vensai-card hover:bg-vensai-elevated border border-vensai-border rounded-lg transition-colors text-center"
                 >
                   <span>Explore Services</span>
                 </Link>
               </div>
 
               {/* 3 Supporting Proof Points */}
-              <div className="pt-6 border-t border-vensai-border/60 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="pt-6 border-t border-vensai-border/60 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2 text-vensai-electric">
-                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan" />
+                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan shrink-0" />
                     <span className="text-xs font-bold uppercase tracking-wider text-vensai-text font-mono">
                       One Partner
                     </span>
@@ -201,7 +201,7 @@ export default function HomePage() {
 
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2 text-vensai-electric">
-                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan" />
+                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan shrink-0" />
                     <span className="text-xs font-bold uppercase tracking-wider text-vensai-text font-mono">
                       Multiple Capabilities
                     </span>
@@ -211,7 +211,7 @@ export default function HomePage() {
 
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2 text-vensai-electric">
-                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan" />
+                    <CheckCircle2 className="w-4 h-4 text-vensai-cyan shrink-0" />
                     <span className="text-xs font-bold uppercase tracking-wider text-vensai-text font-mono">
                       End-to-End Delivery
                     </span>
@@ -221,8 +221,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Column: Interactive Orbital Visual */}
-            <div className="lg:col-span-5 flex justify-center">
+            {/* Right Column: Pure Vensai Logo & Abbreviation Animation Card */}
+            <div className="lg:col-span-5 flex justify-center w-full">
               <HeroOrbital />
             </div>
           </div>
